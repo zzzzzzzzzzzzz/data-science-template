@@ -12,8 +12,7 @@ This is a fork from the following [project](https://github.com/khuyentran1401/da
     * [nbQA](https://github.com/nbQA-dev/nbQA?tab=readme-ov-file#-installation): to be able to run black and isort with jupyter notebooks
 * Supported dependency managers 
     * [Poetry](https://towardsdatascience.com/how-to-effortlessly-publish-your-python-package-to-pypi-using-poetry-44b305362f9f): Dependency management - [article](https://mathdatasimplified.com/poetry-a-better-way-to-manage-python-dependencies/)
-    * conda with installation through pip
-    * pip
+    * [pip](https://pypi.org/project/pip/)
 
 ## How to use this project
 
@@ -26,3 +25,8 @@ Create a project based on the template:
 ```bash
 cookiecutter https://github.com/zzzzzzzzzzzzz/data-science-template
 ```
+
+## Recommendation
+- Once the template is compiled into your project, you may consider to install virtualenv with certain python version before proceeding with installation of dependencies. E.g. you can use [conda](https://docs.anaconda.com/free/miniconda/miniconda-install.html).
+- Conda gives the opportunity to install non-python packages(e.g. CUDA with GPU support), while Poetry can be considered as **powerful doge** version of pip. This combination does not limit your ability to manage isolated environment and at the same time gives you the flexibility of Poetry.
+- Using development docker container is also a good option.
