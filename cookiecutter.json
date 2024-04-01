@@ -5,5 +5,5 @@
     "dependency_manager": ["poetry", "conda-pip", "pip"],
     "allow_commit_to_main": ["yes", "no"],
     "compatible_python_versions": "^3.10",
-    "_extensions": ["filters.regexp"]
+    "_extensions": ["filters.regex_format"]
 }
