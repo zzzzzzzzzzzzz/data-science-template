@@ -45,7 +45,10 @@ Built from cookiecutter project [`data-science-template`](https://github.com/zzz
 ```
 
 ## Set up the environment
-1. You should have dedicated [conda](https://docs.anaconda.com/free/miniconda/miniconda-install.html) environment with certain python version. You might want to consider python version not less than: {{ cookiecutter.compatible_python_versions | regex_format('\d\.\d{1,2}') }}
+1. You should have dedicated [conda](https://docs.anaconda.com/free/miniconda/miniconda-install.html) environment with certain python version, though installing globally is also fine if you have compaitable python version installed. 
+
+**Consider python version not less than: {{ cookiecutter.compatible_python_versions | regex_format('\d\.\d{1,2}') }}**
+
 {% if cookiecutter.dependency_manager == "poetry" %}
 2. Install [Poetry](https://python-poetry.org/docs/#installation). E.g. with conda
 ```bash
