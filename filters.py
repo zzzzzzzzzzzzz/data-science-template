@@ -9,3 +9,4 @@ def regex_format(input_str, pattern):
         return match.group(0)
     else:
         return input_str
+

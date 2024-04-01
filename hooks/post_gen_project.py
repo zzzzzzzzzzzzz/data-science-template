@@ -1,7 +1,7 @@
 import os
 
 def parse_dependencies_settings():
-    if "{{ cookiecutter.dependency_manager }}" != "pip":
+    if "{{ cookiecutter.dependency_manager }}" == "poetry":
         os.remove("requirements.txt")
         os.remove("requirements-dev.txt")
 

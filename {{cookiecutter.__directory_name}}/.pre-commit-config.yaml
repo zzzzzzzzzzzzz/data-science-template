@@ -16,8 +16,7 @@ repos:
       - id: check-toml
       - id: detect-aws-credentials
       - id: detect-private-key
-      - id: name-tests-test
-{%- if cookiecutter.dependency_manager != "poetry" %}
+{%- if cookiecutter.dependency_manager == "poetry"%}
       - id: requirements-txt-fixer
 {% endif %}
 {%- if cookiecutter.allow_commit_to_main != "yes" %}
@@ -48,16 +47,16 @@ repos:
         files: ^notebooks/
 
   - repo: https://github.com/kynan/nbstripout
-    rev: 0.7.0
+    rev: 0.6.1
     hooks:
       - id: nbstripout
 
   - repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.8.0
+    rev: 1.6.3
     hooks:
       - id: nbqa-black # Run 'black' on Jupyter Notebooks
-        files: notebooks/
+        files: notebooks/shareable/
       - id: nbqa-isort # Run 'isort' on Jupyter Notebooks
-        files: notebooks/
+        files: notebooks/shareable/
         args: ["--float-to-top"]
 

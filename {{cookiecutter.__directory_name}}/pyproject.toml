@@ -9,11 +9,11 @@ authors = ["{{ cookiecutter.author_name }}"]
 python = "{{ cookiecutter.compatible_python_versions }}"
 pandas = "^2.0.0"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.dev.dependencies]
 ipykernel = "^6.29.0"
 notebook = "^7.0.0"
-nbstripout = "^0.7.0"
-nbqa = "^1.8.0"
+nbstripout = "^0.6.0"
+nbqa = "^1.6.0"
 black = "^24.3.0"
 isort = "^5.13.0"
 flake8 = "^6.0.0"

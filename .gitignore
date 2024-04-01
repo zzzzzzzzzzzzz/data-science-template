@@ -83,14 +83,3 @@ target/
 # vim
 *.swp
 *.swo
-
-# Caches
-.mypy_cache/
-.pytest_cache/
-
-# Data
-data/*/*
-
-# Notebooks
-notebooks/*
-!notebooks/shareable/
